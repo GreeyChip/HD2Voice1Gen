@@ -1,5 +1,7 @@
 # HD2Voice1Gen
-A script the uses GPT-SoVITS api to generate voice files for hell diver voice 1
+A linux script the uses GPT-SoVITS api to generate voice files for hell diver voice 1.
+
+https://github.com/RVC-Boss/GPT-SoVITS
 
 ## Step One start API
 

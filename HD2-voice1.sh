@@ -16,6 +16,9 @@ cp $folder/1498244884530361493.wav $folder/16654763581260070033.wav
 curl  '127.0.0.1:9880/?text="300;meters"&text_language=en'$audiofiles -H 'Accept: */*'  -H 'Cache-Control: no-cache' -o "$folder/3251049382839479653.wav"
 cp $folder/3251049382839479653.wav $folder/8884074177997892927.wav
 
+curl  '127.0.0.1:9880/?text="50meters"&text_language=en'$audiofiles -H 'Accept: */*'  -H 'Cache-Control: no-cache' -o "$folder/1631833814029360058.wav"
+cp $folder/1631833814029360058.wav $folder/10570466836134681227.wav
+
 curl  '127.0.0.1:9880/?text="A;little;shot;of;liberty"&text_language=en'$audiofiles -H 'Accept: */*'  -H 'Cache-Control: no-cache' -o "$folder/8450150180062362235.wav"
 cp $folder/8450150180062362235.wav $folder/9559708285356980918.wav
 

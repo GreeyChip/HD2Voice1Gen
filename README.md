@@ -40,23 +40,23 @@ https://github.com/RVC-Boss/GPT-SoVITS
 
 #list all files in folder and put them in a text file
 
-`ls ~/Music/AudioSamples/Alice/* > ~/Music/AudioSamples/Alice-audio-paths.txt`
+`ls ~/Music/AudioSamples/Rapi/* > ~/Music/AudioSamples/Rapi-audio-paths.txt`
 
 #add "&inp_refs=" to beginning of each line.
 
-`awk '{print "&inp_refs="$0}' ~/Music/AudioSamples/Alice-audio-paths.txt > ~/Music/AudioSamples/Alice-audio-paths_new.txt`
+`awk '{print "&inp_refs="$0}' ~/Music/AudioSamples/Rapi-audio-paths.txt > ~/Music/AudioSamples/Rapi-audio-paths_new.txt`
 
 #remove file as its not needed.
 
-`rm ~/Music/AudioSamples/Alice-audio-paths.txt`
+`rm ~/Music/AudioSamples/Rapi-audio-paths.txt`
 
 #remove all spaces in file
 
-`cat ~/Music/AudioSamples/Alice-audio-paths_new.txt | tr -d " \t\n\r" > ~/Music/AudioSamples/Alice-audio-paths.txt`
+`cat ~/Music/AudioSamples/Rapi-audio-paths_new.txt | tr -d " \t\n\r" > ~/Music/AudioSamples/Rapi-audio-paths.txt`
 
 #remove not needed file
 
-`rm ~/Music/AudioSamples/Alice-audio-paths_new.txt`
+`rm ~/Music/AudioSamples/Rapi-audio-paths_new.txt`
 
 
 ## Step 3 Generate voice files.

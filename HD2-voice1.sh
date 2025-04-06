@@ -1,23 +1,23 @@
 ############Edit This To fit you own config ####################
 # replace with you're own name
-folder="Rapi"
+folder="A2"
 api="127.0.0.1:9880"
 mkdir $folder
 # you're own text file should have all the paths to the audio files with no spaces
 #chnage /home/neil/Music/AudioSamples/Rapi-audio-paths.txt to you're own file. Full path
-audiofiles=$(cat /home/neil/Music/AudioSamples/Rapi-audio-paths.txt)
+audiofiles=$(cat /home/neil/Music/AudioSamples/A2-audio-paths.txt)
 #################################################################
 curl  '127.0.0.1:9880/?text="100;meters"&text_language=en'$audiofiles -H 'Accept: */*'  -H 'Cache-Control: no-cache' -o "$folder/4723298081741177440.wav"
 cp  $folder/4723298081741177440.wav $folder/14899722513692468585.wav
-
+sleep 5
 curl  '127.0.0.1:9880/?text="200;meters"&text_language=en'$audiofiles -H 'Accept: */*'  -H 'Cache-Control: no-cache' -o "$folder/1498244884530361493.wav"
 cp $folder/1498244884530361493.wav $folder/16654763581260070033.wav
 
-curl  '127.0.0.1:9880/?text="300;meters"&text_language=en'$audiofiles -H 'Accept: */*'  -H 'Cache-Control: no-cache' -o "$folder/3251049382839479653.wav"
-cp $folder/3251049382839479653.wav $folder/8884074177997892927.wav
-
 curl  '127.0.0.1:9880/?text="50meters"&text_language=en'$audiofiles -H 'Accept: */*'  -H 'Cache-Control: no-cache' -o "$folder/1631833814029360058.wav"
 cp $folder/1631833814029360058.wav $folder/10570466836134681227.wav
+
+curl  '127.0.0.1:9880/?text="300;meters"&text_language=en'$audiofiles -H 'Accept: */*'  -H 'Cache-Control: no-cache' -o "$folder/3251049382839479653.wav"
+cp $folder/3251049382839479653.wav $folder/8884074177997892927.wav
 
 curl  '127.0.0.1:9880/?text="A;little;shot;of;liberty"&text_language=en'$audiofiles -H 'Accept: */*'  -H 'Cache-Control: no-cache' -o "$folder/8450150180062362235.wav"
 cp $folder/8450150180062362235.wav $folder/9559708285356980918.wav
@@ -77,6 +77,8 @@ cp $folder/223585406463009983.wav $folder/8049944132654994640.wav
 
 curl  '127.0.0.1:9880/?text="Bugoutpostspotted"&text_language=en'$audiofiles -H 'Accept: */*'  -H 'Cache-Control: no-cache' -o "$folder/5664804944846825148.wav"
 cp $folder/5664804944846825148.wav $folder/14477223913152625170.wav
+cp $folder/5664804944846825148.wav $folder/9431471462573868179.wav
+cp $folder/5664804944846825148.wav $folder/15523616412862290035.wav
 
 curl  '127.0.0.1:9880/?text="Bugtunnelbreach"&text_language=en'$audiofiles -H 'Accept: */*'  -H 'Cache-Control: no-cache' -o "$folder/2157851371794722240.wav"
 cp $folder/2157851371794722240.wav $folder/4514753904208439898.wav
@@ -245,9 +247,9 @@ curl  '127.0.0.1:9880/?text="down"&text_language=en'$audiofiles -H 'Accept: */*'
 cp $folder/6207115834845396295.wav $folder/17124200325783396974.wav
 
 
-
-curl  '127.0.0.1:9880/?text="Droppingapin"&text_language=en'$audiofiles -H 'Accept: */*'  -H 'Cache-Control: no-cache' -o "$folder/15972967878730559747.wav"
-cp $folder/15972967878730559747.wav $folder/18148058769172548856.wav 
+#Ai not good at saying Dropping a pin replaced with Tagging map
+#curl  '127.0.0.1:9880/?text="Droppingapin"&text_language=en'$audiofiles -H 'Accept: */*'  -H 'Cache-Control: no-cache' -o "$folder/15972967878730559747.wav"
+#p $folder/15972967878730559747.wav $folder/18148058769172548856.wav 
 
 curl  '127.0.0.1:9880/?text="Droppinghighvalueitem"&text_language=en'$audiofiles -H 'Accept: */*'  -H 'Cache-Control: no-cache' -o "$folder/6911127479364839253.wav"
 cp $folder/6911127479364839253.wav $folder/16758903181505684528.wav
@@ -1022,6 +1024,9 @@ cp $folder/2825804913332797157.wav $folder/16064109636966518369.wav
 
 curl  '127.0.0.1:9880/?text="Taggingmap"&text_language=en'$audiofiles -H 'Accept: */*'  -H 'Cache-Control: no-cache' -o "$folder/5402965373412737783.wav"
 cp $folder/5402965373412737783.wav $folder/7413972020924681154.wav
+cp $folder/5402965373412737783.wav $folder/15972967878730559747.wav
+cp $folder/5402965373412737783.wav $folder/18148058769172548856.wav
+
 
 curl  '127.0.0.1:9880/?text="Teamreloadrequired"&text_language=en'$audiofiles -H 'Accept: */*'  -H 'Cache-Control: no-cache' -o "$folder/267940704947706307.wav"
 cp $folder/267940704947706307.wav $folder/13138758301545498025.wav
@@ -1123,37 +1128,3 @@ cp $folder/12619374028309081761.wav $folder/14803487143457344529.wav
 
 curl  '127.0.0.1:9880/?text="Youwin"&text_language=en'$audiofiles -H 'Accept: */*'  -H 'Cache-Control: no-cache' -o "$folder/3668339305188766332.wav"
 cp $folder/3668339305188766332.wav $folder/14570508093299614319.wav
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
